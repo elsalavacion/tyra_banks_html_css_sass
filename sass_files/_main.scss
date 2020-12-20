@@ -1,0 +1,15 @@
+main
+{
+  width: 97%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-areas: 
+  "blog-1 blog-1 blog-1 about about"
+  "blog-2 blog-2 blog-2 post post"
+  "blog-2 blog-2 blog-2 gallery gallery"
+  "blog-3 blog-3 blog-3 social social"
+  "blog-3 blog-3 blog-3 subscribe subscribe"
+  "blog-3 blog-3 blog-3 tags tags"
+
+  ;
+}

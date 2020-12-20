@@ -1,0 +1,37 @@
+
+// about
+.about 
+{
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: about;
+  // heading 
+  &-heading 
+  {
+    font-family: $permanent-marker;
+    font-size: 38px;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  // image 
+  &-image 
+  {
+    height: 300px;
+    background: url(../img/tyra-face-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  // motto
+  &-motto 
+  {
+    font-size: 16px;
+    font-family: $cardo;
+    padding: 10px;
+    color: white;
+    background: black;
+  }
+}

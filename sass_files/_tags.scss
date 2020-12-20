@@ -1,0 +1,43 @@
+
+// tags
+.tags
+{
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: tags;
+  
+   // heading 
+   &-heading 
+   {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: $langar;
+   }
+  // tags list
+  &-list 
+  {
+    padding: 5px;
+    // span 
+    span 
+    {
+      background: lightgray;
+      padding: 5px 10px;
+      margin: 5px 3px;
+      font-size: 14px;
+      display: inline-block;
+      font-family: $lato;
+
+      // first child
+      &:first-child
+      {
+        background: black;
+        color: white;
+      }
+    }
+
+    
+  }
+}

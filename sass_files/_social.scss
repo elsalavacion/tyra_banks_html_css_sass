@@ -1,0 +1,30 @@
+.social 
+{
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: social;
+  // heading
+  &-heading 
+  {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: $langar;
+  }
+  &-icon 
+  {
+    padding: 5px;
+    span 
+    {
+      padding: 0 10px;
+      
+      // hover
+      &:hover
+      {
+        opacity: 0.7;
+      }
+    }
+  }
+}

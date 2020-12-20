@@ -1,0 +1,117 @@
+// Blog-1
+
+.blog-1 {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: blog-1;
+  // heading
+  &-heading {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: $langar;
+  }
+
+  // motto
+  &-motto {
+    text-align: center;
+    padding: 0 0 25px;
+    font-size: 18px;
+
+    span {
+      color: darkgray;
+    }
+  }
+
+  // image
+  img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+
+  &-blog {
+    font-family: $noto;
+  }
+
+  &-btn {
+    padding: 25px 0;
+    // replies
+    &-replies {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid black;
+      cursor: pointer;
+      font-weight: bold;
+
+      // hover
+      &:hover {
+        background: white;
+        color: black;
+
+        span {
+          background-color: black;
+          color: white;
+        }
+      }
+
+      // span
+      span {
+        background: white;
+        padding: 0 5px;
+        color: black;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  // replies
+  &-replies {
+    // reply-1
+    &-1 {
+      display: flex;
+      border-top: 1px solid lightgray;
+      padding: 15px;
+      // img
+      img {
+        height: 100px;
+        width: 75px;
+        margin-right: 25px;
+      }
+
+      // desc
+      &-desc {
+        // h1
+        h2 {
+          font-size: 18px;
+          padding-bottom: 10px;
+
+          // span
+          span {
+            color: darkgray;
+            padding-left: 15px;
+            font-size: 14px;
+          }
+        }
+        p {
+          font-family: $ubuntu;
+          font-weight: lighter;
+        }
+      }
+    }
+    display: none;
+  }
+  // inputs
+  #like-1,
+  #replies-1 {
+    display: none;
+  }
+
+  // replies checked
+  #replies-1:checked ~ .blog-1-replies {
+    display: block;
+  }
+}

@@ -1,0 +1,51 @@
+
+.subscribe 
+{
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: subscribe;
+  
+  &-heading 
+  {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: $langar;
+  }
+
+  &-form 
+  {
+    padding: 5px;
+
+    input, label 
+    {
+      width: 100%;
+      margin: 10px auto;
+      line-height: 40px;
+      font-size: 16px;
+    }
+
+    input 
+    {
+      padding-left: 10px;
+      border: 1px solid lightgray;
+    }
+    input[type = "submit"]
+    {
+      padding: 5px 0;
+      cursor: pointer;
+      background: red;
+      color: white;
+      border: none;
+      font-size: 18px;
+      font-family: $lato;
+      // hover 
+      &:hover 
+      {
+        opacity: 0.7;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+
+.post 
+{
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: post;
+  // heading 
+  &-heading 
+  {
+    font-size: 18px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: $langar;
+  }
+  // post
+  &-posts
+  {
+    
+    // post 
+    &-post 
+    {
+      display: flex;
+      border-bottom: 2px solid darkgray;
+      padding: 5px;
+      
+      // title 
+      h3 
+      {
+        padding: 5px 0;
+      }
+
+      p 
+      {
+        font-size: 14px;
+      }
+      img 
+      {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+      }
+
+      // hover 
+      &:hover
+      {
+        background: lightgray;
+      }
+
+      // last child 
+      &:last-child 
+      {
+        border: none;
+      }
+    }
+  }
+}

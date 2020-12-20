@@ -1,0 +1,19 @@
+@media(max-width: 995px)
+{
+  // main 
+main{
+  width: 97%;
+  margin: 5px auto;
+  grid-template-areas: 
+  "about about about about about"
+  "blog-1 blog-1 blog-1 blog-1 blog-1"
+  "blog-2 blog-2 blog-2 blog-2 blog-2"
+  "blog-3 blog-3 blog-3 blog-3 blog-3"
+  "post post post post post"
+  "gallery gallery gallery gallery gallery"
+  "social social social social social"
+  "subscribe subscribe subscribe subscribe subscribe"
+  "tags tags tags tags tags"
+}
+}
+

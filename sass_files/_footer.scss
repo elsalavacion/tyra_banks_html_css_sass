@@ -1,0 +1,36 @@
+
+.footer 
+{
+  background: black;
+  color: white;
+  height: 150px;
+  font-size: 16px;
+  grid-area: footer;
+  font-family: $lato;
+    // top
+    &-top 
+    {
+      float: right;
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      margin: 25px 20px 50px;
+
+      &:hover
+      {
+        opacity: 0.7;
+      }
+    }
+    // motto 
+    &-motto
+    {
+      clear: both;
+      text-align: center;
+
+      a{
+        text-decoration: underline;
+        font-style: italic;
+        color: white;
+      }
+    }
+}

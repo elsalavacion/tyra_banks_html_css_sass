@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  background: lightgray;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.nav {
+  width: 100vw;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  height: 40px; }
+  .nav a {
+    color: white;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block; }
+    .nav a:hover {
+      background: darkgray; }
+    .nav a i {
+      font-size: 18px; }
+  .nav-search {
+    padding: 0 20px; }
+
+.header {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  text-align: center;
+  background: white; }
+  .header h1 {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+    font-size: 38px;
+    padding: 25px 0; }
+  .header p {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 20px; }
+    .header p span {
+      background: black;
+      color: white;
+      padding: 10px; }
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/tyra-face-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .showcase-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%; }
+    .showcase-overlay-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: white;
+      width: 100%;
+      height: 100%;
+      padding: 0 25px; }
+      .showcase-overlay-content-motto {
+        font-size: 32px;
+        font-weight: bolder;
+        font-family: "Oswald", sans-serif; }
+      .showcase-overlay-content-heading {
+        font-size: 42px;
+        font-family: "Bungee", cursive; }
+      .showcase-overlay-content-btn a {
+        background: darkgray;
+        color: black;
+        font-size: 18px;
+        padding: 15px 30px;
+        font-weight: bolder;
+        display: block; }
+        .showcase-overlay-content-btn a:hover {
+          background: lightgray; }
+
+.blog-1 {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: blog-1; }
+  .blog-1-heading {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: "Langar", cursive; }
+  .blog-1-motto {
+    text-align: center;
+    padding: 0 0 25px;
+    font-size: 18px; }
+    .blog-1-motto span {
+      color: darkgray; }
+  .blog-1 img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px; }
+  .blog-1-blog {
+    font-family: "Noto Sans JP", sans-serif; }
+  .blog-1-btn {
+    padding: 25px 0; }
+    .blog-1-btn-replies {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid black;
+      cursor: pointer;
+      font-weight: bold; }
+      .blog-1-btn-replies:hover {
+        background: white;
+        color: black; }
+        .blog-1-btn-replies:hover span {
+          background-color: black;
+          color: white; }
+      .blog-1-btn-replies span {
+        background: white;
+        padding: 0 5px;
+        color: black;
+        margin: 0 10px; }
+  .blog-1-replies {
+    display: none; }
+    .blog-1-replies-1 {
+      display: flex;
+      border-top: 1px solid lightgray;
+      padding: 15px; }
+      .blog-1-replies-1 img {
+        height: 100px;
+        width: 75px;
+        margin-right: 25px; }
+      .blog-1-replies-1-desc h2 {
+        font-size: 18px;
+        padding-bottom: 10px; }
+        .blog-1-replies-1-desc h2 span {
+          color: darkgray;
+          padding-left: 15px;
+          font-size: 14px; }
+      .blog-1-replies-1-desc p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter; }
+  .blog-1 #like-1,
+  .blog-1 #replies-1 {
+    display: none; }
+  .blog-1 #replies-1:checked ~ .blog-1-replies {
+    display: block; }
+
+.blog-2 {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: blog-2; }
+  .blog-2-heading {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: "Langar", cursive; }
+  .blog-2-motto {
+    text-align: center;
+    padding: 0 0 25px;
+    font-size: 18px; }
+    .blog-2-motto span {
+      color: darkgray; }
+  .blog-2 img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px; }
+  .blog-2-blog {
+    font-family: "Noto Sans JP", sans-serif; }
+  .blog-2-btn {
+    padding: 25px 0; }
+    .blog-2-btn-replies {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid black;
+      cursor: pointer;
+      font-weight: bold; }
+      .blog-2-btn-replies:hover {
+        background: white;
+        color: black; }
+        .blog-2-btn-replies:hover span {
+          background-color: black;
+          color: white; }
+      .blog-2-btn-replies span {
+        background: white;
+        padding: 0 5px;
+        color: black;
+        margin: 0 10px; }
+  .blog-2-replies {
+    display: none; }
+    .blog-2-replies-2 {
+      display: flex;
+      border-top: 1px solid lightgray;
+      padding: 15px; }
+      .blog-2-replies-2 img {
+        height: 100px;
+        width: 75px;
+        margin-right: 25px; }
+      .blog-2-replies-2-desc h2 {
+        font-size: 20px;
+        padding-bottom: 20px; }
+        .blog-2-replies-2-desc h2 span {
+          color: darkgray;
+          padding-left: 15px;
+          font-size: 16px; }
+      .blog-2-replies-2-desc p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter; }
+  .blog-2 #like-2,
+  .blog-2 #replies-2 {
+    display: none; }
+  .blog-2 #replies-2:checked ~ .blog-2-replies {
+    display: block; }
+
+.blog-3 {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: blog-3; }
+  .blog-3-heading {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-family: "Langar", cursive; }
+  .blog-3-motto {
+    text-align: center;
+    padding: 0 0 25px;
+    font-size: 18px; }
+    .blog-3-motto span {
+      color: darkgray; }
+  .blog-3 img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px; }
+  .blog-3-blog {
+    font-family: "Noto Sans JP", sans-serif; }
+  .blog-3-btn {
+    padding: 25px 0; }
+    .blog-3-btn-replies {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid black;
+      cursor: pointer;
+      font-weight: bold; }
+      .blog-3-btn-replies:hover {
+        background: white;
+        color: black; }
+        .blog-3-btn-replies:hover span {
+          background-color: black;
+          color: white; }
+      .blog-3-btn-replies span {
+        background: white;
+        padding: 0 5px;
+        color: black;
+        margin: 0 10px; }
+  .blog-3-replies {
+    display: none; }
+    .blog-3-replies-3 {
+      display: flex;
+      border-top: 1px solid lightgray;
+      padding: 15px; }
+      .blog-3-replies-3 img {
+        height: 100px;
+        width: 75px;
+        margin-right: 25px; }
+      .blog-3-replies-3-desc h2 {
+        font-size: 20px;
+        padding-bottom: 20px; }
+        .blog-3-replies-3-desc h2 span {
+          color: darkgray;
+          padding-left: 15px;
+          font-size: 16px; }
+      .blog-3-replies-3-desc p {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: lighter; }
+  .blog-3 #like-3,
+  .blog-3 #replies-3 {
+    display: none; }
+  .blog-3 #replies-3:checked ~ .blog-3-replies {
+    display: block; }
+
+.about {
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: about; }
+  .about-heading {
+    font-family: "Permanent Marker", cursive;
+    font-size: 38px;
+    text-align: center;
+    padding: 15px 0; }
+  .about-image {
+    height: 300px;
+    background: url(../img/tyra-face-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .about-motto {
+    font-size: 16px;
+    font-family: "Cardo", serif;
+    padding: 10px;
+    color: white;
+    background: black; }
+
+.post {
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: post; }
+  .post-heading {
+    font-size: 18px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: "Langar", cursive; }
+  .post-posts-post {
+    display: flex;
+    border-bottom: 2px solid darkgray;
+    padding: 5px; }
+    .post-posts-post h3 {
+      padding: 5px 0; }
+    .post-posts-post p {
+      font-size: 14px; }
+    .post-posts-post img {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-right: 25px; }
+    .post-posts-post:hover {
+      background: lightgray; }
+    .post-posts-post:last-child {
+      border: none; }
+
+.tags {
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: tags; }
+  .tags-heading {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: "Langar", cursive; }
+  .tags-list {
+    padding: 5px; }
+    .tags-list span {
+      background: lightgray;
+      padding: 5px 10px;
+      margin: 5px 3px;
+      font-size: 14px;
+      display: inline-block;
+      font-family: "Lato", sans-serif; }
+      .tags-list span:first-child {
+        background: black;
+        color: white; }
+
+.gallery {
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  grid-area: gallery; }
+  .gallery-heading {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: "Langar", cursive; }
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .gallery-images-item {
+      margin: 5px;
+      height: 150px; }
+      .gallery-images-item img {
+        width: 100%;
+        height: 100%; }
+
+.social {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: social; }
+  .social-heading {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: "Langar", cursive; }
+  .social-icon {
+    padding: 5px; }
+    .social-icon span {
+      padding: 0 10px; }
+      .social-icon span:hover {
+        opacity: 0.7; }
+
+.subscribe {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  grid-area: subscribe; }
+  .subscribe-heading {
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-family: "Langar", cursive; }
+  .subscribe-form {
+    padding: 5px; }
+    .subscribe-form input, .subscribe-form label {
+      width: 100%;
+      margin: 10px auto;
+      line-height: 40px;
+      font-size: 16px; }
+    .subscribe-form input {
+      padding-left: 10px;
+      border: 1px solid lightgray; }
+    .subscribe-form input[type="submit"] {
+      padding: 5px 0;
+      cursor: pointer;
+      background: red;
+      color: white;
+      border: none;
+      font-size: 18px;
+      font-family: "Lato", sans-serif; }
+      .subscribe-form input[type="submit"]:hover {
+        opacity: 0.7; }
+
+.footer {
+  background: black;
+  color: white;
+  height: 150px;
+  font-size: 16px;
+  grid-area: footer;
+  font-family: "Lato", sans-serif; }
+  .footer-top {
+    float: right;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    margin: 25px 20px 50px; }
+    .footer-top:hover {
+      opacity: 0.7; }
+  .footer-motto {
+    clear: both;
+    text-align: center; }
+    .footer-motto a {
+      text-decoration: underline;
+      font-style: italic;
+      color: white; }
+
+main {
+  width: 97%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-areas: "blog-1 blog-1 blog-1 about about" "blog-2 blog-2 blog-2 post post" "blog-2 blog-2 blog-2 gallery gallery" "blog-3 blog-3 blog-3 social social" "blog-3 blog-3 blog-3 subscribe subscribe" "blog-3 blog-3 blog-3 tags tags"; }
+
+@media (max-width: 995px) {
+  main {
+    width: 97%;
+    margin: 5px auto;
+    grid-template-areas: "about about about about about" "blog-1 blog-1 blog-1 blog-1 blog-1" "blog-2 blog-2 blog-2 blog-2 blog-2" "blog-3 blog-3 blog-3 blog-3 blog-3" "post post post post post" "gallery gallery gallery gallery gallery" "social social social social social" "subscribe subscribe subscribe subscribe subscribe" "tags tags tags tags tags"; } }

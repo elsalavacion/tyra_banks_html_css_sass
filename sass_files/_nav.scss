@@ -1,0 +1,34 @@
+// Navbar
+.nav 
+{
+  width: 100vw;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  a 
+  {
+    color: white;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    // hover 
+    &:hover
+    {
+      background: darkgray;
+    }
+
+    i 
+    {
+      font-size: 18px;
+
+    }
+  }
+
+  // search 
+  &-search 
+  {
+    padding: 0 20px;
+  }
+
+}
